@@ -1,0 +1,62 @@
+.ticket-redact {
+  width: 780px;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+
+  .tabs {
+    .ticket-redact__tab-1 {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .ticket-viewing__inner-btn {
+        align-self: flex-end;
+        border-radius: 50px;
+        height: 60px;
+      }
+    }
+
+    #tab-2 {
+      display: none;
+    }
+
+    .ticket-redact__tab-2 {
+      flex-direction: column;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .ticket-viewing__inner-example {
+      }
+
+      .ticket-viewing__inner-example-img {
+      }
+    }
+
+    #tab-3 {
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .ticket-create__button {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        border-radius: 50px;
+        height: 60px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

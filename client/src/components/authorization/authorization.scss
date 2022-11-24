@@ -1,0 +1,93 @@
+.form-autorization {
+  max-width: 380px;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: auto;
+
+  .form__inner {
+    border: 0;
+    margin: 0;
+    min-width: 0;
+    padding: 0.01em 0 0 0;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-images {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &-images--pupil {
+      margin: 20px 0;
+    }
+
+    &-images--teacher {
+      margin: 40px 0;
+    }
+
+    &-img {
+    }
+
+    &-inputs-pupil {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+
+      input {
+        width: 300px;
+        height: 50px;
+
+        &:not(:last-child) {
+          margin-bottom: 35px;
+        }
+      }
+    }
+
+    &-inputs-teacher {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 75px;
+
+      input {
+        width: 300px;
+        height: 60px;
+
+        &:not(:last-child) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    &-inputs-teacher {
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+
+      margin-bottom: 15px;
+    }
+
+    &-regist {
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.form-autorization--pupil {
+  padding: 25px;
+}
+
+.form-autorization--teacher {
+  padding: 50px 25px;
+}

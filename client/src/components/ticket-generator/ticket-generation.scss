@@ -1,0 +1,192 @@
+.ticket-generator {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+
+  .exam-common-info {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .exam-common-info__label {
+      align-self: center;
+      display: flex;
+      margin-bottom: 25px;
+
+      input {
+        border: 0;
+        box-shadow: none;
+        border-bottom: 3px solid #405d91;
+        background-color: #ffffff;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: rgba(97, 90, 90, 0.7);
+      }
+
+      input:focus,
+      :active {
+        outline: 0;
+        outline-color: unset;
+      }
+    }
+
+    .exam-common-info__inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .exam-common-info__info-field {
+        margin-bottom: 25px;
+
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .database-questions {
+    flex-direction: column;
+    display: none;
+
+    input {
+      max-width: 250px;
+    }
+
+    .database-questions__label {
+      text-align: center;
+      margin-bottom: 35px;
+      font-size: 24px;
+    }
+
+    .database-questions__questions {
+      display: flex;
+      justify-content: space-between;
+
+      .database-questions__question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          display: flex;
+          text-align: center;
+          max-width: 200px;
+          justify-self: center;
+          margin-bottom: 25px;
+        }
+
+        &-add {
+          margin-bottom: 20px;
+          display: flex;
+        }
+
+        .database-questions__question-btn {
+          background: #d9d9d9;
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 700;
+
+          color: #405d91;
+          padding: 5px;
+          cursor: pointer;
+        }
+
+        &-storage {
+          align-self: flex-start;
+          margin-bottom: 35px;
+
+          &-item {
+            display: flex;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+
+    &__arrow-back {
+      margin-right: 25px;
+    }
+
+    &__arrow-front {
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  .ticket-redact {
+    .links {
+      a {
+        font-size: 30px;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .choosing-ticket {
+    margin-bottom: 25px;
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    &__tickets {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__tickets-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 50px;
+      margin-bottom: 25px;
+
+      img {
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #405d91;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #405d91;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .button-back {
+    display: flex;
+    align-items: center;
+
+    .button-back__image {
+      margin-right: 10px;
+    }
+
+    .button-back__text {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #405d91;
+    }
+  }
+}

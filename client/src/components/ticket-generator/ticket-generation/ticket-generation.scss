@@ -1,0 +1,106 @@
+.ticket-generation {
+  width: 400px;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  justify-content: flex-start;
+  margin: auto;
+
+  .tabs {
+    h2, h3 {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .ticket-generation__tab-1 {
+      display: flex;
+      flex-direction: column;
+
+      .ticket-generation__choose {
+        margin-bottom: 50px;
+
+        &-template {
+          h3 {
+            margin-bottom: 25px;
+          }
+
+          margin-bottom: 35px;
+
+          input {
+            max-width: 300px;
+          }
+        }
+
+        &-number {
+          h3 {
+            margin-bottom: 15px;
+          }
+
+          &-inpt {
+            display: flex;
+
+            input {
+              margin-right: 25px;
+              max-width: 75px;
+              text-align: center;
+            }
+
+            p {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 29px;
+
+              color: #405d91;
+            }
+          }
+        }
+      }
+
+      .ticket-generation__btn {
+        align-self: center;
+        border-radius: 50px;
+        height: 60px;
+      }
+    }
+
+    #tab-2 {
+      display: none;
+    }
+
+    .ticket-generation__tab-2 {
+      flex-direction: column;
+
+      .button-back {
+
+        justify-content: center;
+        margin-bottom: 25px;
+      }
+
+      .ticket-generation__success {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35px;
+
+        h2 {
+        }
+
+        img {
+        }
+      }
+
+      .ticket-generation__format {
+        &-images {
+          display: flex;
+          justify-content: center;
+
+          img {
+            &:not(:last-child) {
+              margin-right: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

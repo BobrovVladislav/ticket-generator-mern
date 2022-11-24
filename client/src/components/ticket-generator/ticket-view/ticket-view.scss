@@ -1,0 +1,41 @@
+.ticket-viewing {
+  max-width: 780px;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  .tabs {
+    .ticket-viewing__tab-1 {
+      display: flex;
+      flex-direction: column;
+      padding: 25px 50px;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .ticket-viewing__inner-btn {
+        align-self: flex-end;
+        border-radius: 50px;
+        height: 60px;
+      }
+    }
+
+    .ticket-viewing__tab-2 {
+      flex-direction: column;
+      padding: 25px 50px;
+      display: none;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .ticket-viewing__inner-example {
+      }
+
+      .ticket-viewing__inner-example-img {
+      }
+    }
+  }
+}

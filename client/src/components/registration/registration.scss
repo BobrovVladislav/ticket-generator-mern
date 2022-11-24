@@ -1,0 +1,82 @@
+.form-registration {
+  width: 650px;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 25px;
+
+  .form__inner {
+    border: 0;
+    margin: 0;
+    min-width: 0;
+    padding: 0.01em 0 0 0;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-inputs {
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 50px;
+      transition: all 0.3s ease 0s;
+
+      &-img {
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+      }
+
+      &-pupil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-teacher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    input {
+      width: 250px;
+      height: 50px;
+      border: 2px solid #405d91;
+
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      button {
+        width: 250px;
+      }
+    }
+
+    &-regist {
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
+    }
+  }
+
+  .disabled {
+    img {
+      opacity: 50%;
+    }
+
+    input {
+      pointer-events: none;
+      border: none;
+    }
+  }
+}

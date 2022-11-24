@@ -1,0 +1,195 @@
+/*personal account-----------*/
+
+.exPersonalAccount__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px 50px;
+  align-content: space-evenly;
+}
+
+.exPersonalAccount__inner p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #3a373d;
+}
+
+.exPersonalAccount__inner h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.exPersonalAccount__inner h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #405d91;
+}
+
+/* Портфолио  *******************/
+.profile {
+  grid-area: 'profile';
+}
+
+.profile__inner {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  padding: 30px;
+}
+
+.profile__inner-img {
+  margin-right: 35px;
+}
+
+.profile__inner-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* .profile__inner-content p {
+} */
+
+.profile__inner-text {
+  text-align: center;
+}
+
+.profile__inner-exit {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.profile__inner-exit a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: rgba(58, 55, 61, 0.7);
+}
+
+/* Детальная информация  *******************/
+
+.detailded-information {
+  grid-area: 'info';
+}
+
+.detailed-information__inner {
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: auto;
+
+  padding: 30px;
+}
+
+.detailed-information__inner-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px 25px;
+}
+
+.detailed-information__inner-content p {
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+
+.adress__inner {
+  margin-bottom: 20px;
+}
+
+.adress__add img {
+  display: inline;
+
+  height: 30px;
+  vertical-align: text-bottom;
+  cursor: pointer;
+
+  padding-left: 10px;
+}
+
+.password__inner-show img {
+  display: inline;
+
+  height: 30px;
+  vertical-align: text-bottom;
+  cursor: pointer;
+
+  padding-left: 25px;
+}
+
+.password__inner-show {
+  display: flex;
+}
+
+.password__inner-content {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.password__change img {
+  display: inline;
+
+  height: 30px;
+  vertical-align: text-bottom;
+  cursor: pointer;
+
+  padding-left: 10px;
+}
+
+/* Новости  *******************/
+.news {
+  grid-area: 'news';
+}
+
+.news__inner {
+  width: auto;
+  max-height: 350px;
+  overflow-y: scroll;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  padding: 30px;
+
+}
+
+.news__inner-paragraps p:not(:last-child) {
+  padding-bottom: 25px;
+}
+
+/* Архив************ */
+.archive {
+  grid-area: 'archive';
+}
+
+.archive__inner {
+  width: auto;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.archive__inner-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.archive__inner-options a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: underline;
+
+  color: #3a373d;
+}
+
+.archive__inner-options a:not(:last-child) {
+  padding-bottom: 25px;
+}
