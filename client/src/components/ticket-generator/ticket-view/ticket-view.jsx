@@ -10,7 +10,7 @@ import TicketExample from "../../../assets/images/ticket-example.png"
 
 const TicketView = function () {
     return (
-        <div className={TicketView}>
+        <div className="TicketView">
             <Header></Header>
             <div className="wrapper">
                 <main className="main">

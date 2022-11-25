@@ -1,6 +1,6 @@
 const defaultState = {}
 
-export default function fileReducer(state = defaultState, action) {
+export default function ticketReducer(state = defaultState, action) {
     switch (action.type) {
 
         default:

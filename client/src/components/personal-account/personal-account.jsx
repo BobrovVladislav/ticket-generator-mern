@@ -6,10 +6,13 @@ import {Link} from "react-router-dom";
 import IconArrow from "../../assets/images/icon-arrow.png";
 import ClosedEye from "../../assets/images/icon-closed-eye.svg"
 import Avatar from "../../assets/images/icon-profile.svg"
+import {useDispatch} from "react-redux";
+import {logout} from "../../reducers/userReducer";
 
 const PersonalAccount = function () {
+    const dispatch = useDispatch()
     return (
-        <div className={PersonalAccount}>
+        <div className="PersonalAccount">
             <Header></Header>
             <div className="wrapper">
                 <main className="main">
@@ -27,8 +30,11 @@ const PersonalAccount = function () {
                                         </div>
                                     </div>
                                     <div className="profile__inner-exit">
-                                        <Link to="/student-authorization">Выйти</Link>
+                                            <div onClick={() => dispatch(logout())}>
+                                                <Link to="/student-authorization">Выйти</Link>
+                                            </div>
                                     </div>
+
                                 </div>
                             </div>
                             <div className="archive">

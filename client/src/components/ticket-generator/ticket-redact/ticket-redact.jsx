@@ -8,7 +8,7 @@ import Ticket from "../../../assets/images/ticket.svg"
 
 const TicketRedact = function () {
     return (
-        <div className={TicketRedact}>
+        <div className="TicketRedact">
             <Header></Header>
             <div className="wrapper">
                 <main className="main">

@@ -8,7 +8,7 @@ import Arrow from "../../../assets/images/arrow.png"
 
 const TicketCreate = function () {
     return (
-        <div className={TicketCreate}>
+        <div className="TicketCreate">
             <Header></Header>
             <div className="wrapper">
                 <main class="main">

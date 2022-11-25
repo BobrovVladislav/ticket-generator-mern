@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Header from "../header/header";
 import Footer from "../footer/footer";
@@ -7,10 +7,16 @@ import {Link} from "react-router-dom";
 
 import IconPupilDisabled from "../../assets/images/icon-pupil-disabled.png";
 import IconTeacherActive from "../../assets/images/icon-teacher-active.svg"
+import Input from "../../utils/input/input";
+import {useDispatch} from "react-redux";
+import {teacherAuthorization} from "../../actions/user";
 
 const TeacherAuthorization = function () {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const dispatch = useDispatch()
     return (
-        <div className={TeacherAuthorization}>
+        <div className="TeacherAuthorization">
             <Header></Header>
             <div className="wrapper">
                 <main className="main">
@@ -24,16 +30,21 @@ const TeacherAuthorization = function () {
                                     <Link className="form__inner-img" to="/student-authorization"><img
                                         src={IconPupilDisabled} alt="ученик"/></Link>
                                     <Link className="form__inner-img" to="#"><img src={IconTeacherActive}
-                                                                                    alt="преподаватель"/></Link>
+                                                                                  alt="преподаватель"/></Link>
                                 </div>
                                 <div className="form__inner-inputs-teacher">
-                                    <input type="email" placeholder="Email"/>
-                                    <input type="password" placeholder="Пароль"/>
+                                    <Input value={email} setValue={setEmail} type="email" placeholder="Email"/>
+                                    <Input value={password} setValue={setPassword} type="password"
+                                           placeholder="Пароль"/>
                                 </div>
                                 <div className="form__inner-button">
-                                    <Link to="/personal-account">
-                                    <button type="submit">Войти</button>
-                                    </Link>
+
+                                        <Link onClick={() =>
+                                            dispatch(teacherAuthorization(email, password))} to="/personal-account">
+                                            <button type="reset"
+                                            >Войти
+                                            </button>
+                                        </Link>
                                 </div>
                                 <div className="form__inner-regist">
                                     <Link to="/">Зарегестрироваться</Link>

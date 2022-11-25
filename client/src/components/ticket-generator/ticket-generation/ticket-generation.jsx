@@ -11,7 +11,7 @@ import Pdf from "../../../assets/images/pdf.png"
 
 const TicketGeneration = function () {
     return (
-        <div className={TicketGeneration}>
+        <div className="TicketGeneration">
             <Header></Header>
             <div className="wrapper">
                 <main className="main">
