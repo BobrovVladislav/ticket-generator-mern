@@ -1,5 +1,5 @@
-import Header from "../../header/header";
-import Footer from "../../footer/footer";
+import Header from "../../../utils/header/header";
+import Footer from "../../../utils/footer/footer";
 import TicketControl from "../ticket-control/ticket-control";
 import "./ticket-redact.scss"
 import "../ticket-generation.scss"

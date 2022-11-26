@@ -1,0 +1,16 @@
+.form__inner-images {
+  display: flex;
+  justify-content: space-evenly;
+
+  &--pupil {
+  margin: 20px 0;
+}
+
+  &--teacher {
+    margin: 40px 0;
+  }
+  img{}
+}
+
+
+

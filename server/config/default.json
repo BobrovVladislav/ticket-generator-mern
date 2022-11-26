@@ -1,5 +1,5 @@
 {
   "serverPort" : 5000,
-  "dbUrl": "mongodb+srv://monolit:127859320721@exam-ticket.vjdikf8.mongodb.net/?retryWrites=true&w=majority",
+  "dbUrl": "mongodb+srv://monolit:127859320721@exam-ticket.vjdikf8.mongodb.net/exam-ticket?retryWrites=true&w=majority",
   "secretKey": "mern-secret-key"
 }

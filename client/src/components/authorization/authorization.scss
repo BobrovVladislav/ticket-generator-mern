@@ -15,21 +15,6 @@
       justify-content: center;
     }
 
-    &-images {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    &-images--pupil {
-      margin: 20px 0;
-    }
-
-    &-images--teacher {
-      margin: 40px 0;
-    }
-
-    &-img {
-    }
 
     &-inputs-pupil {
       display: flex;
@@ -71,15 +56,6 @@
       justify-content: center;
 
       margin-bottom: 15px;
-    }
-
-    &-regist {
-      display: flex;
-      justify-content: center;
-
-      a {
-        text-decoration: underline;
-      }
     }
   }
 }

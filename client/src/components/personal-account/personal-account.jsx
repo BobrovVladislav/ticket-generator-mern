@@ -1,5 +1,5 @@
-import Header from "../header/header";
-import Footer from "../footer/footer";
+import Header from "../../utils/header/header";
+import Footer from "../../utils/footer/footer";
 import "./personal-account.scss"
 import {Link} from "react-router-dom";
 
