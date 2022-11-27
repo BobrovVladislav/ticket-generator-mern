@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import IconPupilActive from "../../../assets/images/icon-pupil-active.svg";
-import IconTeacherActive from "../../../assets/images/icon-teacher-active.svg";
+import IconPupilActive from "../../assets/images/icon-pupil-active.svg";
+import IconTeacherActive from "../../assets/images/icon-teacher-active.svg";
 import "./form-nav.scss"
 
 const FormNav = () => {

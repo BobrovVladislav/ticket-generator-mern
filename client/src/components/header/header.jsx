@@ -25,10 +25,10 @@ const Header = function () {
                 <div className="container">
                     <div className="header__inner-two">
                         <div className="header__inner-two-image">
-                            <a href="client/src/utils/header/header#"><img src={logoVGUIT} alt="Значок ВГУИТ"/></a>
+                            <a href="#"><img src={logoVGUIT} alt="Значок ВГУИТ"/></a>
                         </div>
                         <div className="header__inner-two-title">
-                            <h1><a href="client/src/utils/header/header#">Генератор экзаменационных билетов</a></h1>
+                            <h1><a href="#">Генератор экзаменационных билетов</a></h1>
                             <p>Программное средство создания экзаменационных билетов<span> Vue</span>.js</p>
                         </div>
                     </div>

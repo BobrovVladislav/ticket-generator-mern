@@ -72,22 +72,22 @@ router.post('/authorization-teacher',
     async function (req, res) {
         try {
             const {email, password} = req.body
-            const teacher = await Teacher.findOne({email})
-            if (!teacher) {
+            const user = await Teacher.findOne({email})
+            if (!user) {
                 return res.status(404).json({message: "Пользователь не найден"})
             }
 
-            const isPasswordValid = bcrypt.compareSync(password, teacher.password)
+            const isPasswordValid = bcrypt.compareSync(password, user.password)
             if (!isPasswordValid) {
                 return res.status(400).json({message: "Неверный пароль"})
             }
-            const token = jwt.sign({id: teacher.id}, config.get("secretKey"), {expiresIn: "1h"})
+            const token = jwt.sign({id: user.id}, config.get("secretKey"), {expiresIn: "1h"})
             return res.json({
                 token,
-                teacher: {
-                    id: teacher.id,
-                    email: teacher.email,
-                    avatar: teacher.avatar,
+                user: {
+                    id: user.id,
+                    email: user.email,
+                    avatar: user.avatar,
                 }
             })
         } catch (e) {
@@ -122,25 +122,24 @@ router.post('/authorization-student',
         }
     })
 
-// router.get('/auth', authMiddleware,
-//     async (req, res) => {
-//         try {
-//             const user = await User.findOne({_id: req.user.id})
-//             const token = jwt.sign({id: user.id}, config.get("secretKey"), {expiresIn: "1h"})
-//             return res.json({
-//                 token,
-//                 user: {
-//                     id: user.id,
-//                     email: user.email,
-//                     diskSpace: user.diskSpace,
-//                     usedSpace: user.usedSpace,
-//                     avatar: user.avatar
-//                 }
-//             })
-//         } catch (e) {
-//             console.log(e)
-//             res.send({message: "Server error"})
-//         }
-//     })
+//teacher
+router.get('/auth', authMiddleware,
+    async (req, res) => {
+        try {
+            const user = await Teacher.findOne({_id: req.user.id})
+            const token = jwt.sign({id: user.id}, config.get("secretKey"), {expiresIn: "1h"})
+            return res.json({
+                token,
+                user: {
+                    id: user.id,
+                    email: user.email,
+                    avatar: user.avatar
+                }
+            })
+        } catch (e) {
+            console.log(e)
+            res.send({message: "Server error"})
+        }
+    })
 
 module.exports = router
